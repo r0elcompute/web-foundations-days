@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5 - User Directory</title>
+    <script src="users.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>User Directory</h1>
+      <p>Load the user directory, then filter users by name.</p>
+
+      <button id="load-users" type="button">Load users</button>
+
+      <label for="filter-input">Filter users by name</label>
+      <input id="filter-input" type="search" autocomplete="off">
+
+      <p id="status" role="status" aria-live="polite">Users have not been loaded yet.</p>
+      <ul id="users-list"></ul>
+    </main>
+  </body>
+</html>
