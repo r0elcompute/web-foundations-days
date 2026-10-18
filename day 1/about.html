@@ -3,55 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About</title>
+  <title>About QuickNotes</title>
 </head>
 <body>
   <header>
-
+    <h1>QuickNotes</h1>
+    <p>Capture ideas before they disappear.</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
   </header>
-  <nav>
-
-  </nav>
   <main>
-    <h2> About QuickNotes</h2>
-    <p>QuickNotes is a simple web application that allows users to quickly capture and manage their notes. It is designed to be user-friendly and efficient, enabling users to jot down ideas before they forget them.</p>
+    <h2>About QuickNotes</h2>
+    <p>QuickNotes helps you quickly capture ideas and keep useful notes organized. Use it to save thoughts before they disappear and find them again when you need them.</p>
     <section>
       <h3>How to use QuickNotes</h3>
+      <ol>
+        <li>Enter your idea in the new note field.</li>
+        <li>Select <strong>Add Note</strong> to save it to your list.</li>
+        <li>Review your notes whenever you need a reminder.</li>
+      </ol>
+    </section>
+    <section>
+      <h3>Features</h3>
       <ul>
-        <li>Click the "Add Note" button to create a new note.</li>
-        <li>Edit the note by clicking on it.</li>
-        <li>Delete a note by clicking the "Delete" button.</li>
+        <li>Quickly add ideas to a simple notes list.</li>
+        <li>See your saved notes together in one place.</li>
+        <li>Use keyboard shortcuts to work more efficiently.</li>
       </ul>
     </section>
     <section>
-      <h3>KeyBoard Shortcuts</h3>
-      <table border="1">
-        <tr>
-          <th>Shortcut</th>
-          <th>Action</th>
-        </tr>
-        <tr>
-          <td>Ctrl + N</td>
-          <td>Create a new note</td>
-        </tr>
-        <tr>
-          <td>Ctrl + S</td>
-          <td>Save the note</td>
-        </tr>
+      <h3>Keyboard shortcuts</h3>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Shortcut</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ctrl + N</td>
+            <td>Create a new note</td>
+          </tr>
+          <tr>
+            <td>Ctrl + S</td>
+            <td>Save the current note</td>
+          </tr>
+        </tbody>
       </table>
     </section>
     <section>
+      <h3>Send feedback</h3>
       <form>
-        <legend>Leave us a feedback</legend>
-        <label for="feedback"></label>
-        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
-        <br>
-        <input type="submit" value="Submit">
+        <p>
+          <label for="feedback-name">Name</label>
+          <input type="text" id="feedback-name" name="name" required>
+        </p>
+        <p>
+          <label for="feedback-email">Email</label>
+          <input type="email" id="feedback-email" name="email" required>
+        </p>
+        <p>
+          <label for="feedback-message">Message</label>
+          <textarea id="feedback-message" name="message" rows="4" required></textarea>
+        </p>
+        <button type="submit">Send feedback</button>
       </form>
     </section>
-    <footer>
-      <p>&copy; 2026 QuickNotes. Built during Web Foundations.</p>
-    </footer>
   </main>
+  <footer>
+    <p>&copy; 2026 QuickNotes. Built during Web Foundations.</p>
+  </footer>
 </body>
 </html>
